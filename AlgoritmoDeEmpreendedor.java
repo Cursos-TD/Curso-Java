@@ -9,17 +9,17 @@ int size = problemList.size();
 for (int i = 0; i < size; i++)
 {
 	Problem problem = problemList.get(i);
-    List<Method> methodList = SolutionMethod.getAllMethodPossibilities(problem);
+    	List<Method> methodList = SolutionMethod.getAllMethodPossibilities(problem);
 	List<Solution> solutionList = new ArrayList<>();	
 
-    for (int j = 0; j < methodList.size(); j++)
-	{
+    	for (int j = 0; j < methodList.size(); j++)
+    	{
 		Method method = methodList.get(j);
 		boolean result = method.verify();// Deve aplicar efetivamento em outro loop.
 		if ( result == true )
 			solutionList.add(method);
-	    
-	}
+    	
+    	}
 
-	problem.set(solutionList);
+    	problem.set(solutionList);
 }
