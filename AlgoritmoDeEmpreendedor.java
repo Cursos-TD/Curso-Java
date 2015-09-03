@@ -15,7 +15,7 @@ for (int i = 0; i < size; i++)
     	for (int j = 0; j < methodList.size(); j++)
     	{
 		Method method = methodList.get(j);
-		boolean result = method.verify();// Deve aplicar efetivamento em outro loop.
+		boolean result = method.verify();// Deve aplicar efetivamente em outro loop.
 		if ( result == true )
 			solutionList.add(method);
     	
